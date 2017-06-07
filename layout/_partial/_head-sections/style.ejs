@@ -1,0 +1,10 @@
+<%
+	var base = 'css/base';
+	var needed = '';
+	if(is_home()){
+		needed = '/css/home'
+	}else{
+		needed  ='/css/index'
+	}
+%>
+<%-css ([base,needed]) %>

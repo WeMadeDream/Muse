@@ -1,0 +1,22 @@
+<!--脚本设置-->
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>
+<script type="text/javascript">
+	$('.ui.sidebar')
+	.sidebar({
+		onVisible:function(){
+			console.log('visible');
+			$('#sidebar-icon').attr("class","large remove icon");
+		},
+		onHide:function(){
+			console.log('hide');
+			$('#sidebar-icon').attr("class","large content icon");
+		},
+		duration: 0
+	});
+
+	$('#sidebar-toggle').click(function(){
+		$('.ui.sidebar')
+		.sidebar('toggle');
+	});
+</script>

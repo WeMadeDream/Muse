@@ -1,0 +1,21 @@
+<!--底部footer-->
+<footer class="footer-wrapper">
+	<div class="ui container">
+		<div class="footer-copyright">
+			<%= theme.footer_top_message %>
+			<br>
+			<%= theme.footer_bottom_message %>
+		</div>
+		<div class="footer-links">
+			<% if (theme.footer_github_status){ %>
+			<a href="<%= theme.footer_github%>"><i class="big github icon"></i></a>
+			<% } %>
+			<% if (theme.footer_weibo_status){ %>
+			<a href="<%= theme.footer_weibo%>"><i class="big weibo icon"></i></a>
+			<% } %>
+			<% if (theme.footer_wechat_status){ %>
+			<a href="<%= theme.footer_wechat%>"><i class="big wechat icon"></i></a>
+			<% } %>
+		</div>
+	</div>
+</footer>

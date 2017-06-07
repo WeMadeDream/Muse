@@ -1,0 +1,34 @@
+<!--顶部导航栏(桌面版)-->
+<div class="ui top fixed huge inverted menu borderless" id="main-nav">
+	<div class="ui container">
+		<div class="item computer">
+			<img src="<%- theme.favicon %>">
+		</div>
+		<% if (site.categories.length){ %>
+  			 <% site.categories.each(function(item){ %>
+    				<% if(!item.parent) {%>
+    					<a href="<%- config.root %><%- item.path %>" class="item computer"><%= item.name %></a>
+				<% } %>
+			<% }); %>
+		<% } %>
+		<% if (theme.github_status){ %>
+			<a href="<%- theme.github%>" class="item computer"><i class="github icon"></i></a>
+		<% } %>
+		<a class="item mobile" id="sidebar-toggle">
+			<i id="sidebar-icon" class="large content icon"></i>
+		</a>
+		<div class="right item mobile logo">
+			<img src="<%- theme.favicon %>">
+		</div>
+	</div>
+</div>
+<!--侧边栏-->
+<div class="ui sidebar inverted vertical menu">
+	<% if (site.categories.length){ %>
+  		 <% site.categories.each(function(item){ %>
+    			<% if(!item.parent){%>
+    				<a href="<%- config.root %><%- item.path %>" class="item"><%= item.name %></a>
+			<% } %>
+		<% }); %>
+	<% } %>
+</div>

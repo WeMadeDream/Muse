@@ -1,0 +1,21 @@
+##banner ---首页网站banner设置
+banner_title: 代扣项目组开放文档
+banner_git: git clone xxxxxxxxx.com
+banner_git_address: 
+##introduction ---首页intro设置
+
+
+##favicon  ---网站图标位置{@favicon}
+favicon: /logo.svg
+##github ---github地址和状态
+github: xxxxxxx
+github_status: true
+##footer ---页脚信息设置
+footer_top_message:  © 2017 Hao Wang
+footer_bottom_message: Powered By Hexo
+footer_github_status: true
+footer_github: 
+footer_weibo_status: true
+footer_weibo: www.baidu.com
+footer_wechat_status: true
+footer_wechat: www.baidu.com

@@ -1,0 +1,36 @@
+@item-header-color: #3e9cd7;
+
+@media screen and (max-width: 795px){
+	#main-nav{
+		.computer{
+			display: none ;
+		}
+	}
+}
+
+@media screen and (min-width: 796px){
+	#main-nav{
+		.mobile{
+			display: none ;
+		}
+	}
+}
+
+.ui.inverted.menu .item:before,.ui.vertical.inverted.menu .item:before{
+	background: none !important;
+}
+
+.sidebar.inverted.vertical.menu{
+	.item{
+		color: white;
+		padding-top: 0.85em;
+		padding-bottom: 0.85em;
+	}
+	.item.header{
+		color: @item-header-color;
+	}
+	.ui.divider{
+		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
+	}
+}

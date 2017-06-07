@@ -1,0 +1,23 @@
+<div id="content" class="clearfix">
+	<!--左边侧边栏-->
+	<aside class="navigation">
+		<div class="inner">
+			<% if (site.categories.length){ %>
+     				<% site.categories.each(function(item){ %>
+    					<% if(!item.parent){%>
+    					
+					<% } %>
+				<% }); %>
+				<% site.categories.each(function(item){ %>
+    					<% if(!item.parent.parent){%>
+    						<%= item.name %>
+					<% } %>
+				<% }); %>
+			<% } %>
+		</div>
+	</aside>
+	<!--右边markdown展示区-->
+	<article class="article-container">
+
+	</article>
+</div>

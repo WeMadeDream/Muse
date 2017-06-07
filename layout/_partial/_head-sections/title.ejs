@@ -1,0 +1,12 @@
+<%
+	var title = page.title;
+	if(is_category()){
+		title = _('category') + ": " + page.category;
+	}
+%>
+
+<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+
+<% if (theme.favicon){ %>
+	<link rel="icon" href="<%- theme.favicon %>">
+<% } %>

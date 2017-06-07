@@ -1,0 +1,65 @@
+@banner-text-color:  hsla(0,0%,100%,.8);
+@background-color: #1B1C1D;
+@banner-start-command-background-color: #283542;
+@banner-start-link-background-color: #0e83cd;
+#banner{
+	margin-top: 60px;
+	text-align: center;
+	color: @banner-text-color !important;
+	background-color: @background-color;
+	h2{
+		padding-top: 100px;
+		font-size: 50px;
+		font-weight: 100;
+	}
+	#banner-start{
+		padding: 60px 0px 60px 0px;
+		font-size: 18px;
+		#banner-start-command{
+				background-color: @banner-start-command-background-color;
+				display: inline-block;
+				padding: 15px 20px 15px 20px;
+		}
+		#banner-start-command:before{
+			content: "$";
+			opacity: .5;
+			padding-right: 10px;
+		}
+		a{
+			color: white;
+			background-color: @banner-start-link-background-color;
+			display: inline-block;
+			padding: 15px;
+			transition: .2s;
+			i{
+				margin: 0;
+			}
+		}
+	}
+}
+#content{
+	padding:50px 30px 50px 30px;
+	h2{
+		color: @banner-start-link-background-color;
+		font-weight: 100 !important;
+	}
+	.column{
+		padding: 40px 20px 40px 20px;
+	}
+	p{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 795px){
+	#content{
+		.ui.header{
+			text-align: center !important;
+		}
+		p{
+			text-align: center;
+		}
+		.column{
+			padding: 30px 0px 30px 0px !important;
+		}
+	}
+}
